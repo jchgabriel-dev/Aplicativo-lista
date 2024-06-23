@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_activityMain_userItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="#F1F1F1"
+    android:clipToPadding="false"
+    android:elevation="4dp">
+
+    <TextView
+        android:id="@+id/name_en"
+        android:layout_width="266dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="16dp"
+        android:text="name_en"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/continent_label"
+        android:layout_width="76dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Continent:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/name_en" />
+
+    <TextView
+        android:id="@+id/continent_es"
+        android:layout_width="164dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:text="continent_es"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintStart_toEndOf="@+id/continent_label"
+        app:layout_constraintTop_toBottomOf="@+id/name_en" />
+
+    <TextView
+        android:id="@+id/capital_label"
+        android:layout_width="76dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Capital"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/continent_label" />
+
+    <TextView
+        android:id="@+id/capital_es"
+        android:layout_width="164dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="8dp"
+        android:text="capital_es"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toEndOf="@+id/capital_label"
+        app:layout_constraintTop_toBottomOf="@+id/continent_es" />
+
+    <TextView
+        android:id="@+id/dial_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="dial_code"
+        app:layout_constraintStart_toEndOf="@+id/code_label"
+        app:layout_constraintTop_toBottomOf="@+id/capital_es" />
+
+    <TextView
+        android:id="@+id/code_2"
+        android:layout_width="61dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="12dp"
+        android:text="code_2"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/dial_code" />
+
+    <TextView
+        android:id="@+id/code_3"
+        android:layout_width="61dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="12dp"
+        android:text="code_3"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/code_2" />
+
+    <TextView
+        android:id="@+id/tld"
+        android:layout_width="40dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="tld"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintStart_toEndOf="@+id/tld_label"
+        app:layout_constraintTop_toBottomOf="@+id/capital_es" />
+
+    <TextView
+        android:id="@+id/code_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Codes:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/capital_label" />
+
+    <TextView
+        android:id="@+id/km2_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="12dp"
+        android:text="KM2:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/code_label"
+        app:layout_constraintTop_toBottomOf="@+id/tld_label" />
+
+    <TextView
+        android:id="@+id/tld_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="8dp"
+        android:text="TLD:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/code_label"
+        app:layout_constraintTop_toBottomOf="@+id/capital_es" />
+
+    <TextView
+        android:id="@+id/km2"
+        android:layout_width="39dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="16dp"
+        android:text="km2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toEndOf="@+id/km2_label"
+        app:layout_constraintTop_toBottomOf="@+id/tld" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="78dp"
+        android:layout_height="200dp"
+        android:background="#CFCFCF"
+        android:src="@drawable/baseline_location_on_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
